@@ -1,0 +1,113 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+// Example using 'Spacelab' bootswatch
+
+//Import bootstrap-sprockets
+@import "bootstrap-sprockets";
+
+// Import spacelab variables
+@import "bootswatch/spacelab/variables";
+
+// Then bootstrap itself
+@import "bootstrap";
+
+// Bootstrap body padding for fixed navbar
+// body { padding-top: 60px; }
+
+// And finally bootswatch style itself
+@import "bootswatch/spacelab/bootswatch";
+
+// HEADER CSS
+.main-header {
+    min-height: 100px;
+    background-color: black;
+    margin-bottom: 20px;
+    
+    .blog-title {
+        text-align: center;
+    }
+    
+    p {
+        text-transform: uppercase;
+    }
+    
+    .navbar-text {
+        float:none !important;
+        margin: 20px auto
+    }
+}
+// LOGIN PAGE CSS
+.log-in {
+    text-align: center;
+}
+// SIGN UP PAGE CSS
+.sign-up {
+    text-align: center;
+}
+// EDIT USER INFO PAGE CSS
+.edit-sign-up {
+    text-align: center;
+}
+// INDEX PAGE CSS
+.index-post-list {
+    text-align: center;
+    
+    .new-post {
+        margin-bottom: 20px;
+    }
+    
+    .index-post {
+        padding: 5px 0;
+        border: 2px solid white;
+        margin-bottom: 20px;
+        -webkit-box-shadow: 0px 7px 12px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow:    0px 7px 12px 0px rgba(50, 50, 50, 0.75);
+        box-shadow:         0px 7px 12px 0px rgba(50, 50, 50, 0.75);
+    }
+    
+    .index-button {
+        margin: 0 10px;
+    }
+    
+    .post-date {
+        color: red;
+    }
+}
+// NEW POST PAGE CSS
+.new-post {
+    text-align: center;
+    
+    #post_title, #post_body {
+        width: 350px;
+    }
+}
+// SHOW PAGE CSS
+.show-blog {
+    text-align: center;
+    
+    .blog-title {
+        text-decoration: underline;
+        font-size: 50px;
+    }
+}
+// EDIT PAGE CSS
+.edit-blog {
+    text-align: center;
+    
+    #post_title, #post_body {
+        width: 350px;
+    }
+}

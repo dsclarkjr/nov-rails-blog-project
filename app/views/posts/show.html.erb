@@ -1,0 +1,14 @@
+<div class="container show-blog col-xs-12">
+    <!--<h2 class="title-title">Title:</h2>-->
+    <h1 class="blog-title"><%= @post.title %></h1>
+    
+    <!--<h2 class="show-intro">Intro:</h2>-->
+    <h4 class="blog-intro"><%= @post.intro %></h4>
+    
+    <!--<h2 class="show-body">Body:</h2>-->
+    <p class="blog-body"><%= @post.body %></p>
+    
+    <button class="btn btn-default back-button"><%= link_to 'Back', posts_path %></button>
+    <button class="btn btn-default"><%= link_to 'Edit', edit_post_path(@post) %></button>
+    
+</div>
